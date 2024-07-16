@@ -1,0 +1,12 @@
+{
+  "package_name": "interfaces_pkg",
+  "non_idl_tuples": [
+    "/home/eunseop/ros2_ws/src/interfaces_pkg:msg/BoundingBox2D.msg",
+    "/home/eunseop/ros2_ws/src/interfaces_pkg:msg/Detection.msg",
+    "/home/eunseop/ros2_ws/src/interfaces_pkg:msg/DetectionArray.msg",
+    "/home/eunseop/ros2_ws/src/interfaces_pkg:msg/Mask.msg",
+    "/home/eunseop/ros2_ws/src/interfaces_pkg:msg/Motor.msg",
+    "/home/eunseop/ros2_ws/src/interfaces_pkg:msg/Point2D.msg",
+    "/home/eunseop/ros2_ws/src/interfaces_pkg:msg/LaneInfo.msg"
+  ]
+}

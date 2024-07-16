@@ -1,0 +1,52 @@
+running egg_info
+creating ../../build/load_img/load_img.egg-info
+writing ../../build/load_img/load_img.egg-info/PKG-INFO
+writing dependency_links to ../../build/load_img/load_img.egg-info/dependency_links.txt
+writing entry points to ../../build/load_img/load_img.egg-info/entry_points.txt
+writing requirements to ../../build/load_img/load_img.egg-info/requires.txt
+writing top-level names to ../../build/load_img/load_img.egg-info/top_level.txt
+writing manifest file '../../build/load_img/load_img.egg-info/SOURCES.txt'
+reading manifest file '../../build/load_img/load_img.egg-info/SOURCES.txt'
+writing manifest file '../../build/load_img/load_img.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/eunseop/ros2_ws/build/load_img/build
+creating /home/eunseop/ros2_ws/build/load_img/build/lib
+creating /home/eunseop/ros2_ws/build/load_img/build/lib/load_img
+copying load_img/image_subscriber_node.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img
+copying load_img/__init__.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img
+copying load_img/video_publisher_node.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img
+copying load_img/image_publisher_node.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img
+copying load_img/camera_publisher_node.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img
+creating /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/lib
+copying load_img/lib/__init__.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/lib
+running install
+running install_lib
+creating /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img
+copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/image_subscriber_node.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img
+creating /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/lib
+copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/lib/__init__.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/lib
+copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/__init__.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img
+copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/video_publisher_node.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img
+copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/image_publisher_node.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img
+copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/camera_publisher_node.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img
+byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/image_subscriber_node.py to image_subscriber_node.cpython-38.pyc
+byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/lib/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/video_publisher_node.py to video_publisher_node.cpython-38.pyc
+byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/image_publisher_node.py to image_publisher_node.cpython-38.pyc
+byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/camera_publisher_node.py to camera_publisher_node.cpython-38.pyc
+running install_data
+creating /home/eunseop/ros2_ws/install/load_img/share/ament_index
+creating /home/eunseop/ros2_ws/install/load_img/share/ament_index/resource_index
+creating /home/eunseop/ros2_ws/install/load_img/share/ament_index/resource_index/packages
+copying resource/load_img -> /home/eunseop/ros2_ws/install/load_img/share/ament_index/resource_index/packages
+copying package.xml -> /home/eunseop/ros2_ws/install/load_img/share/load_img
+running install_egg_info
+Copying ../../build/load_img/load_img.egg-info to /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img-0.0.0-py3.8.egg-info
+running install_scripts
+Installing cam_pub script to /home/eunseop/ros2_ws/install/load_img/lib/load_img
+Installing img_pub script to /home/eunseop/ros2_ws/install/load_img/lib/load_img
+Installing img_sub script to /home/eunseop/ros2_ws/install/load_img/lib/load_img
+Installing video_pub script to /home/eunseop/ros2_ws/install/load_img/lib/load_img
+writing list of installed files to '/home/eunseop/ros2_ws/build/load_img/install.log'

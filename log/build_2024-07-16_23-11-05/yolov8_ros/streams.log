@@ -1,0 +1,37 @@
+[1.000s] Invoking command in '/home/eunseop/ros2_ws/src/yolov8_ros': AMENT_PREFIX_PATH=/home/eunseop/ros2_ws/install/load_img:/home/eunseop/ros2_ws/install/interfaces_pkg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eunseop/ros2_ws/install/interfaces_pkg LD_LIBRARY_PATH=/home/eunseop/ros2_ws/install/interfaces_pkg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eunseop/ros2_ws/build/yolov8_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages:/home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolov8_ros build --build-base /home/eunseop/ros2_ws/build/yolov8_ros/build install --record /home/eunseop/ros2_ws/build/yolov8_ros/install.log --single-version-externally-managed install_data
+[1.225s] running egg_info
+[1.225s] creating ../../build/yolov8_ros/yolov8_ros.egg-info
+[1.225s] writing ../../build/yolov8_ros/yolov8_ros.egg-info/PKG-INFO
+[1.226s] writing dependency_links to ../../build/yolov8_ros/yolov8_ros.egg-info/dependency_links.txt
+[1.226s] writing entry points to ../../build/yolov8_ros/yolov8_ros.egg-info/entry_points.txt
+[1.226s] writing requirements to ../../build/yolov8_ros/yolov8_ros.egg-info/requires.txt
+[1.226s] writing top-level names to ../../build/yolov8_ros/yolov8_ros.egg-info/top_level.txt
+[1.228s] writing manifest file '../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[1.261s] reading manifest file '../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[1.262s] writing manifest file '../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[1.264s] running build
+[1.264s] running build_py
+[1.264s] creating /home/eunseop/ros2_ws/build/yolov8_ros/build
+[1.264s] creating /home/eunseop/ros2_ws/build/yolov8_ros/build/lib
+[1.264s] creating /home/eunseop/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros
+[1.264s] copying yolov8_ros/__init__.py -> /home/eunseop/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros
+[1.264s] copying yolov8_ros/instance_segmentation_node.py -> /home/eunseop/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros
+[1.264s] running install
+[1.265s] running install_lib
+[1.266s] creating /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+[1.266s] copying /home/eunseop/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros/__init__.py -> /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+[1.266s] copying /home/eunseop/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros/instance_segmentation_node.py -> /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+[1.266s] byte-compiling /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/__init__.py to __init__.cpython-38.pyc
+[1.268s] byte-compiling /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/instance_segmentation_node.py to instance_segmentation_node.cpython-38.pyc
+[1.270s] running install_data
+[1.270s] creating /home/eunseop/ros2_ws/install/yolov8_ros/share/ament_index
+[1.270s] creating /home/eunseop/ros2_ws/install/yolov8_ros/share/ament_index/resource_index
+[1.270s] creating /home/eunseop/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages
+[1.270s] copying resource/yolov8_ros -> /home/eunseop/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages
+[1.270s] copying package.xml -> /home/eunseop/ros2_ws/install/yolov8_ros/share/yolov8_ros
+[1.270s] running install_egg_info
+[1.272s] Copying ../../build/yolov8_ros/yolov8_ros.egg-info to /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros-0.0.0-py3.8.egg-info
+[1.272s] running install_scripts
+[1.291s] Installing predict script to /home/eunseop/ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[1.291s] writing list of installed files to '/home/eunseop/ros2_ws/build/yolov8_ros/install.log'
+[1.312s] Invoked command in '/home/eunseop/ros2_ws/src/yolov8_ros' returned '0': AMENT_PREFIX_PATH=/home/eunseop/ros2_ws/install/load_img:/home/eunseop/ros2_ws/install/interfaces_pkg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eunseop/ros2_ws/install/interfaces_pkg LD_LIBRARY_PATH=/home/eunseop/ros2_ws/install/interfaces_pkg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eunseop/ros2_ws/build/yolov8_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages:/home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolov8_ros build --build-base /home/eunseop/ros2_ws/build/yolov8_ros/build install --record /home/eunseop/ros2_ws/build/yolov8_ros/install.log --single-version-externally-managed install_data

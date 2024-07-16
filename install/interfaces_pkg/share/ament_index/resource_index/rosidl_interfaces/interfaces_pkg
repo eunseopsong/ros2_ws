@@ -1,0 +1,14 @@
+msg/BoundingBox2D.idl
+msg/BoundingBox2D.msg
+msg/Detection.idl
+msg/Detection.msg
+msg/DetectionArray.idl
+msg/DetectionArray.msg
+msg/LaneInfo.idl
+msg/LaneInfo.msg
+msg/Mask.idl
+msg/Mask.msg
+msg/Motor.idl
+msg/Motor.msg
+msg/Point2D.idl
+msg/Point2D.msg

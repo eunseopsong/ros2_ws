@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from interfaces_pkg/msg/Motor.msg
+// generated code does not contain a copyright notice
+
+
+module interfaces_pkg {
+  module msg {
+    struct Motor {
+      int32 front_volt;
+
+      int32 rear_volt;
+
+      int32 angle;
+
+      int32 left_speed;
+
+      int32 right_speed;
+
+      int32 potentiometer;
+    };
+  };
+};

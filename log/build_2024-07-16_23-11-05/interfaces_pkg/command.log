@@ -1,0 +1,6 @@
+Invoking command in '/home/eunseop/ros2_ws/build/interfaces_pkg': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/eunseop/ros2_ws/src/interfaces_pkg -DCMAKE_INSTALL_PREFIX=/home/eunseop/ros2_ws/install/interfaces_pkg
+Invoked command in '/home/eunseop/ros2_ws/build/interfaces_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/eunseop/ros2_ws/src/interfaces_pkg -DCMAKE_INSTALL_PREFIX=/home/eunseop/ros2_ws/install/interfaces_pkg
+Invoking command in '/home/eunseop/ros2_ws/build/interfaces_pkg': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/eunseop/ros2_ws/build/interfaces_pkg -- -j8 -l8
+Invoked command in '/home/eunseop/ros2_ws/build/interfaces_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/eunseop/ros2_ws/build/interfaces_pkg -- -j8 -l8
+Invoking command in '/home/eunseop/ros2_ws/build/interfaces_pkg': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/eunseop/ros2_ws/build/interfaces_pkg
+Invoked command in '/home/eunseop/ros2_ws/build/interfaces_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/eunseop/ros2_ws/build/interfaces_pkg

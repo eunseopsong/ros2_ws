@@ -1,0 +1,662 @@
+[0.000000] (-) TimerEvent: {}
+[0.000307] (control_motor) JobQueued: {'identifier': 'control_motor', 'dependencies': OrderedDict()}
+[0.000352] (interfaces_pkg) JobQueued: {'identifier': 'interfaces_pkg', 'dependencies': OrderedDict()}
+[0.000366] (load_img) JobQueued: {'identifier': 'load_img', 'dependencies': OrderedDict()}
+[0.000377] (img_process) JobQueued: {'identifier': 'img_process', 'dependencies': OrderedDict([('interfaces_pkg', '/home/eunseop/ros2_ws/install/interfaces_pkg')])}
+[0.000391] (yolov8_ros) JobQueued: {'identifier': 'yolov8_ros', 'dependencies': OrderedDict([('interfaces_pkg', '/home/eunseop/ros2_ws/install/interfaces_pkg'), ('load_img', '/home/eunseop/ros2_ws/install/load_img')])}
+[0.000404] (interfaces_pkg) JobStarted: {'identifier': 'interfaces_pkg'}
+[0.005985] (load_img) JobStarted: {'identifier': 'load_img'}
+[0.012501] (control_motor) JobStarted: {'identifier': 'control_motor'}
+[0.019225] (interfaces_pkg) JobProgress: {'identifier': 'interfaces_pkg', 'progress': 'cmake'}
+[0.019408] (interfaces_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/eunseop/ros2_ws/src/interfaces_pkg', '-DCMAKE_INSTALL_PREFIX=/home/eunseop/ros2_ws/install/interfaces_pkg'], 'cwd': '/home/eunseop/ros2_ws/build/interfaces_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'eunseop'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1705'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/eunseop'), ('OLDPWD', '/home/eunseop'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1597'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6192'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'eunseop'), ('JOURNAL_STREAM', '8:47904'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eunseop'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/eunseop/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/UbuntuEunseop:@/tmp/.ICE-unix/1743,unix/UbuntuEunseop:/tmp/.ICE-unix/1743'), ('INVOCATION_ID', 'b3183d5477984bd79c31bfdac5a24828'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:51d1acd5-54a4-46c4-a566-c1844e428721'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eunseop/ros2_ws/build/interfaces_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/eunseop/dev_ws/build/aidin_m1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.099657] (-) TimerEvent: {}
+[0.200467] (-) TimerEvent: {}
+[0.205862] (interfaces_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.207032] (interfaces_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.207183] (interfaces_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.260469] (interfaces_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.261380] (interfaces_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300571] (-) TimerEvent: {}
+[0.315352] (interfaces_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.331088] (interfaces_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.331693] (interfaces_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.334512] (interfaces_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.400686] (-) TimerEvent: {}
+[0.409609] (interfaces_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.410375] (interfaces_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.480539] (interfaces_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.491561] (interfaces_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.491927] (interfaces_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.500775] (-) TimerEvent: {}
+[0.501175] (interfaces_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.522858] (interfaces_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.523004] (interfaces_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.588522] (interfaces_pkg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[0.592368] (interfaces_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.599578] (interfaces_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[0.600852] (-) TimerEvent: {}
+[0.682464] (interfaces_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.700955] (-) TimerEvent: {}
+[0.706148] (interfaces_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[0.789406] (interfaces_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.801084] (-) TimerEvent: {}
+[0.815093] (load_img) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/load_img', 'build', '--build-base', '/home/eunseop/ros2_ws/build/load_img/build', 'install', '--record', '/home/eunseop/ros2_ws/build/load_img/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/eunseop/ros2_ws/src/load_img', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'eunseop', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1705', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/eunseop', 'OLDPWD': '/home/eunseop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1597', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6192', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'eunseop', 'JOURNAL_STREAM': '8:47904', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'eunseop', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/eunseop/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/UbuntuEunseop:@/tmp/.ICE-unix/1743,unix/UbuntuEunseop:/tmp/.ICE-unix/1743', 'INVOCATION_ID': 'b3183d5477984bd79c31bfdac5a24828', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:51d1acd5-54a4-46c4-a566-c1844e428721', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eunseop/ros2_ws/build/load_img', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': ':/home/eunseop/dev_ws/build/aidin_m1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/eunseop/ros2_ws/build/load_img/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.817417] (interfaces_pkg) StdoutLine: {'line': b'-- Found std_msgs: 2.2.4 (/opt/ros/galactic/share/std_msgs/cmake)\n'}
+[0.819057] (control_motor) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/control_motor', 'build', '--build-base', '/home/eunseop/ros2_ws/build/control_motor/build', 'install', '--record', '/home/eunseop/ros2_ws/build/control_motor/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/eunseop/ros2_ws/src/control_motor', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'eunseop', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1705', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/eunseop', 'OLDPWD': '/home/eunseop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1597', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6192', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'eunseop', 'JOURNAL_STREAM': '8:47904', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'eunseop', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/eunseop/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/UbuntuEunseop:@/tmp/.ICE-unix/1743,unix/UbuntuEunseop:/tmp/.ICE-unix/1743', 'INVOCATION_ID': 'b3183d5477984bd79c31bfdac5a24828', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:51d1acd5-54a4-46c4-a566-c1844e428721', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eunseop/ros2_ws/build/control_motor', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': ':/home/eunseop/dev_ws/build/aidin_m1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/eunseop/ros2_ws/build/control_motor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[0.845182] (interfaces_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)\n'}
+[0.887630] (interfaces_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.901195] (-) TimerEvent: {}
+[0.985019] (load_img) StdoutLine: {'line': b'running egg_info\n'}
+[0.985371] (load_img) StdoutLine: {'line': b'creating ../../build/load_img/load_img.egg-info\n'}
+[0.985713] (load_img) StdoutLine: {'line': b'writing ../../build/load_img/load_img.egg-info/PKG-INFO\n'}
+[0.985881] (load_img) StdoutLine: {'line': b'writing dependency_links to ../../build/load_img/load_img.egg-info/dependency_links.txt\n'}
+[0.986042] (load_img) StdoutLine: {'line': b'writing entry points to ../../build/load_img/load_img.egg-info/entry_points.txt\n'}
+[0.986134] (load_img) StdoutLine: {'line': b'writing requirements to ../../build/load_img/load_img.egg-info/requires.txt\n'}
+[0.986181] (load_img) StdoutLine: {'line': b'writing top-level names to ../../build/load_img/load_img.egg-info/top_level.txt\n'}
+[0.987446] (load_img) StdoutLine: {'line': b"writing manifest file '../../build/load_img/load_img.egg-info/SOURCES.txt'\n"}
+[0.988295] (control_motor) StdoutLine: {'line': b'running egg_info\n'}
+[0.988704] (control_motor) StdoutLine: {'line': b'creating ../../build/control_motor/control_motor.egg-info\n'}
+[0.988815] (control_motor) StdoutLine: {'line': b'writing ../../build/control_motor/control_motor.egg-info/PKG-INFO\n'}
+[0.988981] (control_motor) StdoutLine: {'line': b'writing dependency_links to ../../build/control_motor/control_motor.egg-info/dependency_links.txt\n'}
+[0.989061] (control_motor) StdoutLine: {'line': b'writing entry points to ../../build/control_motor/control_motor.egg-info/entry_points.txt\n'}
+[0.989126] (control_motor) StdoutLine: {'line': b'writing requirements to ../../build/control_motor/control_motor.egg-info/requires.txt\n'}
+[0.989182] (control_motor) StdoutLine: {'line': b'writing top-level names to ../../build/control_motor/control_motor.egg-info/top_level.txt\n'}
+[0.990084] (control_motor) StdoutLine: {'line': b"writing manifest file '../../build/control_motor/control_motor.egg-info/SOURCES.txt'\n"}
+[1.001298] (-) TimerEvent: {}
+[1.019591] (load_img) StdoutLine: {'line': b"reading manifest file '../../build/load_img/load_img.egg-info/SOURCES.txt'\n"}
+[1.020240] (load_img) StdoutLine: {'line': b"writing manifest file '../../build/load_img/load_img.egg-info/SOURCES.txt'\n"}
+[1.020386] (load_img) StdoutLine: {'line': b'running build\n'}
+[1.020454] (load_img) StdoutLine: {'line': b'running build_py\n'}
+[1.020560] (load_img) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/load_img/build\n'}
+[1.020672] (load_img) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/load_img/build/lib\n'}
+[1.020732] (load_img) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/load_img/build/lib/load_img\n'}
+[1.020789] (load_img) StdoutLine: {'line': b'copying load_img/image_subscriber_node.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img\n'}
+[1.020841] (load_img) StdoutLine: {'line': b'copying load_img/__init__.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img\n'}
+[1.020891] (load_img) StdoutLine: {'line': b'copying load_img/video_publisher_node.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img\n'}
+[1.020978] (load_img) StdoutLine: {'line': b'copying load_img/image_publisher_node.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img\n'}
+[1.021026] (load_img) StdoutLine: {'line': b'copying load_img/camera_publisher_node.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img\n'}
+[1.021086] (load_img) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/lib\n'}
+[1.021132] (load_img) StdoutLine: {'line': b'copying load_img/lib/__init__.py -> /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/lib\n'}
+[1.021176] (load_img) StdoutLine: {'line': b'running install\n'}
+[1.021725] (load_img) StdoutLine: {'line': b'running install_lib\n'}
+[1.022477] (load_img) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img\n'}
+[1.022558] (load_img) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/image_subscriber_node.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img\n'}
+[1.022637] (load_img) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/lib\n'}
+[1.022727] (load_img) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/lib/__init__.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/lib\n'}
+[1.022790] (load_img) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/__init__.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img\n'}
+[1.022854] (load_img) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/video_publisher_node.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img\n'}
+[1.022903] (load_img) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/image_publisher_node.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img\n'}
+[1.022947] (load_img) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/load_img/build/lib/load_img/camera_publisher_node.py -> /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img\n'}
+[1.023199] (load_img) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/image_subscriber_node.py to image_subscriber_node.cpython-38.pyc\n'}
+[1.024392] (load_img) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/lib/__init__.py to __init__.cpython-38.pyc\n'}
+[1.024653] (load_img) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/__init__.py to __init__.cpython-38.pyc\n'}
+[1.024755] (load_img) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/video_publisher_node.py to video_publisher_node.cpython-38.pyc\n'}
+[1.025406] (load_img) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/image_publisher_node.py to image_publisher_node.cpython-38.pyc\n'}
+[1.025894] (load_img) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img/camera_publisher_node.py to camera_publisher_node.cpython-38.pyc\n'}
+[1.026267] (load_img) StdoutLine: {'line': b'running install_data\n'}
+[1.026343] (load_img) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/load_img/share/ament_index\n'}
+[1.026425] (load_img) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/load_img/share/ament_index/resource_index\n'}
+[1.026521] (load_img) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/load_img/share/ament_index/resource_index/packages\n'}
+[1.026571] (load_img) StdoutLine: {'line': b'copying resource/load_img -> /home/eunseop/ros2_ws/install/load_img/share/ament_index/resource_index/packages\n'}
+[1.026619] (load_img) StdoutLine: {'line': b'copying package.xml -> /home/eunseop/ros2_ws/install/load_img/share/load_img\n'}
+[1.026665] (load_img) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.028148] (load_img) StdoutLine: {'line': b'Copying ../../build/load_img/load_img.egg-info to /home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages/load_img-0.0.0-py3.8.egg-info\n'}
+[1.028747] (load_img) StdoutLine: {'line': b'running install_scripts\n'}
+[1.030308] (control_motor) StdoutLine: {'line': b"reading manifest file '../../build/control_motor/control_motor.egg-info/SOURCES.txt'\n"}
+[1.031262] (control_motor) StdoutLine: {'line': b"writing manifest file '../../build/control_motor/control_motor.egg-info/SOURCES.txt'\n"}
+[1.031394] (control_motor) StdoutLine: {'line': b'running build\n'}
+[1.031443] (control_motor) StdoutLine: {'line': b'running build_py\n'}
+[1.031577] (control_motor) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/control_motor/build\n'}
+[1.031658] (control_motor) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/control_motor/build/lib\n'}
+[1.031710] (control_motor) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor\n'}
+[1.031780] (control_motor) StdoutLine: {'line': b'copying control_motor/convert_protocol_node.py -> /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor\n'}
+[1.031854] (control_motor) StdoutLine: {'line': b'copying control_motor/control_motor_node.py -> /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor\n'}
+[1.031934] (control_motor) StdoutLine: {'line': b'copying control_motor/__init__.py -> /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor\n'}
+[1.032014] (control_motor) StdoutLine: {'line': b'copying control_motor/generate_control_signal_node.py -> /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor\n'}
+[1.032194] (control_motor) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor/lib\n'}
+[1.032268] (control_motor) StdoutLine: {'line': b'copying control_motor/lib/__init__.py -> /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor/lib\n'}
+[1.032503] (control_motor) StdoutLine: {'line': b'running install\n'}
+[1.033510] (control_motor) StdoutLine: {'line': b'running install_lib\n'}
+[1.034627] (control_motor) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor\n'}
+[1.034704] (control_motor) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor/lib\n'}
+[1.034778] (control_motor) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor/lib/__init__.py -> /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor/lib\n'}
+[1.034860] (control_motor) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor/convert_protocol_node.py -> /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor\n'}
+[1.034936] (control_motor) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor/control_motor_node.py -> /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor\n'}
+[1.035011] (control_motor) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor/__init__.py -> /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor\n'}
+[1.035081] (control_motor) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/control_motor/build/lib/control_motor/generate_control_signal_node.py -> /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor\n'}
+[1.035634] (control_motor) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor/lib/__init__.py to __init__.cpython-38.pyc\n'}
+[1.037211] (control_motor) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor/convert_protocol_node.py to convert_protocol_node.cpython-38.pyc\n'}
+[1.037963] (control_motor) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor/control_motor_node.py to control_motor_node.cpython-38.pyc\n'}
+[1.038712] (control_motor) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor/__init__.py to __init__.cpython-38.pyc\n'}
+[1.038823] (control_motor) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor/generate_control_signal_node.py to generate_control_signal_node.cpython-38.pyc\n'}
+[1.039606] (control_motor) StdoutLine: {'line': b'running install_data\n'}
+[1.039702] (control_motor) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/control_motor/share/ament_index\n'}
+[1.039773] (control_motor) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/control_motor/share/ament_index/resource_index\n'}
+[1.039851] (control_motor) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/control_motor/share/ament_index/resource_index/packages\n'}
+[1.039895] (control_motor) StdoutLine: {'line': b'copying resource/control_motor -> /home/eunseop/ros2_ws/install/control_motor/share/ament_index/resource_index/packages\n'}
+[1.039963] (control_motor) StdoutLine: {'line': b'copying package.xml -> /home/eunseop/ros2_ws/install/control_motor/share/control_motor\n'}
+[1.040030] (control_motor) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.041896] (control_motor) StdoutLine: {'line': b'Copying ../../build/control_motor/control_motor.egg-info to /home/eunseop/ros2_ws/install/control_motor/lib/python3.8/site-packages/control_motor-0.0.0-py3.8.egg-info\n'}
+[1.042626] (control_motor) StdoutLine: {'line': b'running install_scripts\n'}
+[1.042975] (load_img) StdoutLine: {'line': b'Installing cam_pub script to /home/eunseop/ros2_ws/install/load_img/lib/load_img\n'}
+[1.043135] (load_img) StdoutLine: {'line': b'Installing img_pub script to /home/eunseop/ros2_ws/install/load_img/lib/load_img\n'}
+[1.043647] (load_img) StdoutLine: {'line': b'Installing img_sub script to /home/eunseop/ros2_ws/install/load_img/lib/load_img\n'}
+[1.043822] (load_img) StdoutLine: {'line': b'Installing video_pub script to /home/eunseop/ros2_ws/install/load_img/lib/load_img\n'}
+[1.043928] (load_img) StdoutLine: {'line': b"writing list of installed files to '/home/eunseop/ros2_ws/build/load_img/install.log'\n"}
+[1.052545] (interfaces_pkg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)\n'}
+[1.060312] (control_motor) StdoutLine: {'line': b'Installing convert_protocol script to /home/eunseop/ros2_ws/install/control_motor/lib/control_motor\n'}
+[1.060531] (control_motor) StdoutLine: {'line': b'Installing gen_control_data script to /home/eunseop/ros2_ws/install/control_motor/lib/control_motor\n'}
+[1.060619] (control_motor) StdoutLine: {'line': b'Installing send_serial script to /home/eunseop/ros2_ws/install/control_motor/lib/control_motor\n'}
+[1.060856] (control_motor) StdoutLine: {'line': b"writing list of installed files to '/home/eunseop/ros2_ws/build/control_motor/install.log'\n"}
+[1.061854] (load_img) CommandEnded: {'returncode': 0}
+[1.071558] (load_img) JobEnded: {'identifier': 'load_img', 'rc': 0}
+[1.078052] (control_motor) CommandEnded: {'returncode': 0}
+[1.081913] (control_motor) JobEnded: {'identifier': 'control_motor', 'rc': 0}
+[1.101424] (-) TimerEvent: {}
+[1.201670] (-) TimerEvent: {}
+[1.248021] (interfaces_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.301782] (-) TimerEvent: {}
+[1.328863] (interfaces_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.347418] (interfaces_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.348650] (interfaces_pkg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)\n'}
+[1.368549] (interfaces_pkg) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.368689] (interfaces_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.368736] (interfaces_pkg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.368778] (interfaces_pkg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.384615] (interfaces_pkg) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.401882] (-) TimerEvent: {}
+[1.445305] (interfaces_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.492560] (interfaces_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.494501] (interfaces_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/eunseop/ros2_ws/build/interfaces_pkg\n'}
+[1.500930] (interfaces_pkg) CommandEnded: {'returncode': 0}
+[1.501391] (interfaces_pkg) JobProgress: {'identifier': 'interfaces_pkg', 'progress': 'build'}
+[1.502958] (interfaces_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eunseop/ros2_ws/build/interfaces_pkg', '--', '-j8', '-l8'], 'cwd': '/home/eunseop/ros2_ws/build/interfaces_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'eunseop'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1705'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/eunseop'), ('OLDPWD', '/home/eunseop'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1597'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6192'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'eunseop'), ('JOURNAL_STREAM', '8:47904'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eunseop'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/eunseop/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/UbuntuEunseop:@/tmp/.ICE-unix/1743,unix/UbuntuEunseop:/tmp/.ICE-unix/1743'), ('INVOCATION_ID', 'b3183d5477984bd79c31bfdac5a24828'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:51d1acd5-54a4-46c4-a566-c1844e428721'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eunseop/ros2_ws/build/interfaces_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/eunseop/dev_ws/build/aidin_m1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[1.503663] (-) TimerEvent: {}
+[1.534068] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__cpp\x1b[0m\n'}
+[1.534275] (interfaces_pkg) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.542175] (interfaces_pkg) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.603809] (-) TimerEvent: {}
+[1.704145] (-) TimerEvent: {}
+[1.804416] (-) TimerEvent: {}
+[1.904696] (-) TimerEvent: {}
+[1.963264] (interfaces_pkg) StdoutLine: {'line': b'[  2%] Built target interfaces_pkg__cpp\n'}
+[1.976113] (interfaces_pkg) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.982922] (interfaces_pkg) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.988501] (interfaces_pkg) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.004797] (-) TimerEvent: {}
+[2.020218] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__rosidl_generator_c\x1b[0m\n'}
+[2.038330] (interfaces_pkg) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_generator_c.dir/rosidl_generator_c/interfaces_pkg/msg/detail/detection__functions.c.o\x1b[0m\n'}
+[2.044260] (interfaces_pkg) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_generator_c.dir/rosidl_generator_c/interfaces_pkg/msg/detail/bounding_box2_d__functions.c.o\x1b[0m\n'}
+[2.048453] (interfaces_pkg) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_generator_c.dir/rosidl_generator_c/interfaces_pkg/msg/detail/mask__functions.c.o\x1b[0m\n'}
+[2.049814] (interfaces_pkg) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_generator_c.dir/rosidl_generator_c/interfaces_pkg/msg/detail/detection_array__functions.c.o\x1b[0m\n'}
+[2.055135] (interfaces_pkg) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_generator_c.dir/rosidl_generator_c/interfaces_pkg/msg/detail/motor__functions.c.o\x1b[0m\n'}
+[2.104907] (-) TimerEvent: {}
+[2.111614] (interfaces_pkg) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_generator_c.dir/rosidl_generator_c/interfaces_pkg/msg/detail/point2_d__functions.c.o\x1b[0m\n'}
+[2.112545] (interfaces_pkg) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_generator_c.dir/rosidl_generator_c/interfaces_pkg/msg/detail/lane_info__functions.c.o\x1b[0m\n'}
+[2.149153] (interfaces_pkg) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libinterfaces_pkg__rosidl_generator_c.so\x1b[0m\n'}
+[2.196151] (interfaces_pkg) StdoutLine: {'line': b'[ 16%] Built target interfaces_pkg__rosidl_generator_c\n'}
+[2.205013] (-) TimerEvent: {}
+[2.207353] (interfaces_pkg) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.208583] (interfaces_pkg) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.305136] (-) TimerEvent: {}
+[2.405516] (-) TimerEvent: {}
+[2.426899] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.461839] (interfaces_pkg) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces_pkg/msg/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[2.462063] (interfaces_pkg) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces_pkg/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[2.464986] (interfaces_pkg) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces_pkg/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[2.476479] (interfaces_pkg) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces_pkg/msg/mask__type_support.cpp.o\x1b[0m\n'}
+[2.505627] (-) TimerEvent: {}
+[2.595115] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.605732] (-) TimerEvent: {}
+[2.613650] (interfaces_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[2.640090] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.679271] (interfaces_pkg) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces_pkg/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[2.705831] (-) TimerEvent: {}
+[2.810602] (-) TimerEvent: {}
+[2.841063] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__rosidl_typesupport_c\x1b[0m\n'}
+[2.866216] (interfaces_pkg) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/detection__type_support.cpp.o\x1b[0m\n'}
+[2.888339] (interfaces_pkg) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces_pkg/msg/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[2.910712] (-) TimerEvent: {}
+[2.918614] (interfaces_pkg) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces_pkg/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[2.933577] (interfaces_pkg) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces_pkg/msg/motor__type_support.cpp.o\x1b[0m\n'}
+[2.956624] (interfaces_pkg) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces_pkg/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[2.960796] (interfaces_pkg) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/detection_array__type_support.cpp.o\x1b[0m\n'}
+[2.966708] (interfaces_pkg) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/mask__type_support.cpp.o\x1b[0m\n'}
+[2.993284] (interfaces_pkg) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/motor__type_support.cpp.o\x1b[0m\n'}
+[3.008812] (interfaces_pkg) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces_pkg/msg/mask__type_support.cpp.o\x1b[0m\n'}
+[3.010807] (-) TimerEvent: {}
+[3.049824] (interfaces_pkg) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces_pkg/msg/motor__type_support.cpp.o\x1b[0m\n'}
+[3.054025] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[3.088058] (interfaces_pkg) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces_pkg/msg/point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.110931] (-) TimerEvent: {}
+[3.122919] (interfaces_pkg) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces_pkg/msg/detail/bounding_box2_d__type_support.c.o\x1b[0m\n'}
+[3.167091] (interfaces_pkg) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces_pkg/msg/lane_info__type_support.cpp.o\x1b[0m\n'}
+[3.172521] (interfaces_pkg) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces_pkg/msg/detail/detection__type_support.c.o\x1b[0m\n'}
+[3.211052] (-) TimerEvent: {}
+[3.251438] (interfaces_pkg) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces_pkg__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.288595] (interfaces_pkg) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces_pkg/msg/detail/detection_array__type_support.c.o\x1b[0m\n'}
+[3.311173] (-) TimerEvent: {}
+[3.338658] (interfaces_pkg) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces_pkg/msg/detail/dds_fastrtps/detection__type_support.cpp.o\x1b[0m\n'}
+[3.348103] (interfaces_pkg) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces_pkg/msg/detail/mask__type_support.c.o\x1b[0m\n'}
+[3.350357] (interfaces_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces_pkg/msg/detail/motor__type_support.c.o\x1b[0m\n'}
+[3.361396] (interfaces_pkg) StdoutLine: {'line': b'[ 50%] Built target interfaces_pkg__rosidl_typesupport_c\n'}
+[3.362224] (interfaces_pkg) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces_pkg/msg/point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.385650] (interfaces_pkg) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces_pkg/msg/detail/point2_d__type_support.c.o\x1b[0m\n'}
+[3.398508] (interfaces_pkg) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces_pkg/msg/detail/lane_info__type_support.c.o\x1b[0m\n'}
+[3.405607] (interfaces_pkg) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces_pkg/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o\x1b[0m\n'}
+[3.411286] (-) TimerEvent: {}
+[3.426835] (interfaces_pkg) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces_pkg/msg/detail/dds_fastrtps/mask__type_support.cpp.o\x1b[0m\n'}
+[3.440283] (interfaces_pkg) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libinterfaces_pkg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.448734] (interfaces_pkg) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.467284] (interfaces_pkg) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/lane_info__type_support.cpp.o\x1b[0m\n'}
+[3.484995] (interfaces_pkg) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces_pkg/msg/detail/dds_fastrtps/motor__type_support.cpp.o\x1b[0m\n'}
+[3.494664] (interfaces_pkg) StdoutLine: {'line': b'[ 62%] Built target interfaces_pkg__rosidl_typesupport_introspection_c\n'}
+[3.506966] (interfaces_pkg) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces_pkg/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.511403] (-) TimerEvent: {}
+[3.611766] (-) TimerEvent: {}
+[3.712127] (-) TimerEvent: {}
+[3.783598] (interfaces_pkg) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces_pkg/msg/lane_info__type_support.cpp.o\x1b[0m\n'}
+[3.812246] (-) TimerEvent: {}
+[3.912626] (-) TimerEvent: {}
+[3.943723] (interfaces_pkg) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces_pkg/msg/detail/dds_fastrtps/lane_info__type_support.cpp.o\x1b[0m\n'}
+[3.947819] (interfaces_pkg) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces_pkg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.012750] (-) TimerEvent: {}
+[4.077397] (interfaces_pkg) StdoutLine: {'line': b'[ 67%] Built target interfaces_pkg__rosidl_typesupport_introspection_cpp\n'}
+[4.112866] (-) TimerEvent: {}
+[4.170629] (interfaces_pkg) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces_pkg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.201997] (interfaces_pkg) StdoutLine: {'line': b'[ 68%] Built target interfaces_pkg__rosidl_typesupport_cpp\n'}
+[4.212991] (-) TimerEvent: {}
+[4.313267] (-) TimerEvent: {}
+[4.317175] (interfaces_pkg) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces_pkg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.404889] (interfaces_pkg) StdoutLine: {'line': b'[ 69%] Built target interfaces_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[4.412361] (interfaces_pkg) StdoutLine: {'line': b'[ 70%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.413340] (-) TimerEvent: {}
+[4.513544] (-) TimerEvent: {}
+[4.613834] (-) TimerEvent: {}
+[4.714132] (-) TimerEvent: {}
+[4.787404] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.804886] (interfaces_pkg) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces_pkg/msg/detail/detection__type_support_c.cpp.o\x1b[0m\n'}
+[4.805240] (interfaces_pkg) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces_pkg/msg/detail/point2_d__type_support_c.cpp.o\x1b[0m\n'}
+[4.805358] (interfaces_pkg) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces_pkg/msg/detail/mask__type_support_c.cpp.o\x1b[0m\n'}
+[4.805508] (interfaces_pkg) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces_pkg/msg/detail/bounding_box2_d__type_support_c.cpp.o\x1b[0m\n'}
+[4.806197] (interfaces_pkg) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces_pkg/msg/detail/detection_array__type_support_c.cpp.o\x1b[0m\n'}
+[4.806377] (interfaces_pkg) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces_pkg/msg/detail/motor__type_support_c.cpp.o\x1b[0m\n'}
+[4.813994] (interfaces_pkg) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces_pkg/msg/detail/lane_info__type_support_c.cpp.o\x1b[0m\n'}
+[4.814249] (-) TimerEvent: {}
+[4.914533] (-) TimerEvent: {}
+[5.014922] (-) TimerEvent: {}
+[5.115302] (-) TimerEvent: {}
+[5.215657] (-) TimerEvent: {}
+[5.309591] (interfaces_pkg) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libinterfaces_pkg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.315746] (-) TimerEvent: {}
+[5.383819] (interfaces_pkg) StdoutLine: {'line': b'[ 81%] Built target interfaces_pkg__rosidl_typesupport_fastrtps_c\n'}
+[5.390888] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg\x1b[0m\n'}
+[5.398425] (interfaces_pkg) StdoutLine: {'line': b'[ 81%] Built target interfaces_pkg\n'}
+[5.406308] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__py\x1b[0m\n'}
+[5.415934] (-) TimerEvent: {}
+[5.417008] (interfaces_pkg) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.516027] (-) TimerEvent: {}
+[5.616268] (-) TimerEvent: {}
+[5.716506] (-) TimerEvent: {}
+[5.816785] (-) TimerEvent: {}
+[5.917119] (-) TimerEvent: {}
+[6.017382] (-) TimerEvent: {}
+[6.117623] (-) TimerEvent: {}
+[6.197419] (interfaces_pkg) StdoutLine: {'line': b'[ 82%] Built target interfaces_pkg__py\n'}
+[6.205190] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__python\x1b[0m\n'}
+[6.217735] (-) TimerEvent: {}
+[6.232557] (interfaces_pkg) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__python.dir/rosidl_generator_py/interfaces_pkg/msg/_detection_array_s.c.o\x1b[0m\n'}
+[6.232886] (interfaces_pkg) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__python.dir/rosidl_generator_py/interfaces_pkg/msg/_detection_s.c.o\x1b[0m\n'}
+[6.233348] (interfaces_pkg) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__python.dir/rosidl_generator_py/interfaces_pkg/msg/_bounding_box2_d_s.c.o\x1b[0m\n'}
+[6.233529] (interfaces_pkg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__python.dir/rosidl_generator_py/interfaces_pkg/msg/_mask_s.c.o\x1b[0m\n'}
+[6.236436] (interfaces_pkg) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__python.dir/rosidl_generator_py/interfaces_pkg/msg/_motor_s.c.o\x1b[0m\n'}
+[6.241436] (interfaces_pkg) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__python.dir/rosidl_generator_py/interfaces_pkg/msg/_point2_d_s.c.o\x1b[0m\n'}
+[6.243127] (interfaces_pkg) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__python.dir/rosidl_generator_py/interfaces_pkg/msg/_lane_info_s.c.o\x1b[0m\n'}
+[6.317873] (-) TimerEvent: {}
+[6.418261] (-) TimerEvent: {}
+[6.420282] (interfaces_pkg) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces_pkg/libinterfaces_pkg__python.so\x1b[0m\n'}
+[6.461146] (interfaces_pkg) StdoutLine: {'line': b'[ 92%] Built target interfaces_pkg__python\n'}
+[6.469126] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[6.469332] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[6.469414] (interfaces_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interfaces_pkg__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[6.487304] (interfaces_pkg) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces_pkg/_interfaces_pkg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.488140] (interfaces_pkg) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces_pkg/_interfaces_pkg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.490606] (interfaces_pkg) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/interfaces_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces_pkg/_interfaces_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.521597] (-) TimerEvent: {}
+[6.581183] (interfaces_pkg) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.581667] (interfaces_pkg) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.604302] (interfaces_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.619187] (interfaces_pkg) StdoutLine: {'line': b'[100%] Built target interfaces_pkg__rosidl_typesupport_introspection_c__pyext\n'}
+[6.621683] (-) TimerEvent: {}
+[6.645839] (interfaces_pkg) StdoutLine: {'line': b'[100%] Built target interfaces_pkg__rosidl_typesupport_c__pyext\n'}
+[6.652695] (interfaces_pkg) StdoutLine: {'line': b'[100%] Built target interfaces_pkg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.663999] (interfaces_pkg) CommandEnded: {'returncode': 0}
+[6.722124] (-) TimerEvent: {}
+[6.783738] (interfaces_pkg) JobProgress: {'identifier': 'interfaces_pkg', 'progress': 'install'}
+[6.795765] (interfaces_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eunseop/ros2_ws/build/interfaces_pkg'], 'cwd': '/home/eunseop/ros2_ws/build/interfaces_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'eunseop'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1705'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/eunseop'), ('OLDPWD', '/home/eunseop'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '1597'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6192'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'eunseop'), ('JOURNAL_STREAM', '8:47904'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eunseop'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/eunseop/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/UbuntuEunseop:@/tmp/.ICE-unix/1743,unix/UbuntuEunseop:/tmp/.ICE-unix/1743'), ('INVOCATION_ID', 'b3183d5477984bd79c31bfdac5a24828'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:51d1acd5-54a4-46c4-a566-c1844e428721'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eunseop/ros2_ws/build/interfaces_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', ':/home/eunseop/dev_ws/build/aidin_m1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[6.806609] (interfaces_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.807053] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/ament_index/resource_index/rosidl_interfaces/interfaces_pkg\n'}
+[6.807191] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg\n'}
+[6.807299] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg\n'}
+[6.807407] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/motor.h\n'}
+[6.807515] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/point2_d.h\n'}
+[6.807620] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.807733] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail\n'}
+[6.807837] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__functions.c\n'}
+[6.807930] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__type_support.h\n'}
+[6.808045] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__functions.c\n'}
+[6.808139] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__type_support.h\n'}
+[6.808252] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__functions.h\n'}
+[6.808357] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__type_support.h\n'}
+[6.808462] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__functions.h\n'}
+[6.808562] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__functions.h\n'}
+[6.808656] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__type_support.h\n'}
+[6.808753] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__struct.h\n'}
+[6.808832] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__struct.h\n'}
+[6.808927] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__functions.h\n'}
+[6.809006] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__struct.h\n'}
+[6.809084] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__functions.c\n'}
+[6.809208] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__type_support.h\n'}
+[6.809307] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__struct.h\n'}
+[6.809416] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__struct.h\n'}
+[6.809770] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__functions.c\n'}
+[6.809852] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__type_support.h\n'}
+[6.809943] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__functions.h\n'}
+[6.810016] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__functions.c\n'}
+[6.810091] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__functions.c\n'}
+[6.810163] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__functions.h\n'}
+[6.810233] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__functions.c\n'}
+[6.810329] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__functions.h\n'}
+[6.810445] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__type_support.h\n'}
+[6.810533] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__struct.h\n'}
+[6.810656] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__struct.h\n'}
+[6.810752] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/mask.h\n'}
+[6.810847] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/bounding_box2_d.h\n'}
+[6.810926] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detection_array.h\n'}
+[6.811017] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/lane_info.h\n'}
+[6.811094] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detection.h\n'}
+[6.811175] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/library_path.sh\n'}
+[6.811252] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/library_path.dsv\n'}
+[6.811351] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_generator_c.so\n'}
+[6.811461] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_generator_c.so" to ""\n'}
+[6.811553] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg\n'}
+[6.811655] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg\n'}
+[6.811746] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.811863] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail\n'}
+[6.811956] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[6.812060] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__rosidl_typesupport_fastrtps_c.h\n'}
+[6.812163] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[6.812268] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__rosidl_typesupport_fastrtps_c.h\n'}
+[6.812346] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[6.812441] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[6.812519] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__rosidl_typesupport_fastrtps_c.h\n'}
+[6.812595] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_fastrtps_c.so\n'}
+[6.812671] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.812747] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg\n'}
+[6.812826] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg\n'}
+[6.812908] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail\n'}
+[6.812987] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.813066] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.813148] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.813228] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.813379] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.813468] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/dds_fastrtps\n'}
+[6.813610] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.813692] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.813771] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.813891] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.813964] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.814039] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg\n'}
+[6.814114] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg\n'}
+[6.814187] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail\n'}
+[6.814260] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__type_support.c\n'}
+[6.814333] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__rosidl_typesupport_introspection_c.h\n'}
+[6.814404] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__rosidl_typesupport_introspection_c.h\n'}
+[6.814478] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__type_support.c\n'}
+[6.814582] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_c.h\n'}
+[6.814661] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[6.814805] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__type_support.c\n'}
+[6.814901] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__type_support.c\n'}
+[6.815013] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[6.815130] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__type_support.c\n'}
+[6.815241] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__rosidl_typesupport_introspection_c.h\n'}
+[6.815344] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__type_support.c\n'}
+[6.815459] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__type_support.c\n'}
+[6.815554] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__rosidl_typesupport_introspection_c.h\n'}
+[6.815647] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.815751] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_introspection_c.so\n'}
+[6.815853] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.815942] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_c.so\n'}
+[6.816031] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_c.so" to ""\n'}
+[6.816119] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg\n'}
+[6.816194] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg\n'}
+[6.816267] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/bounding_box2_d.hpp\n'}
+[6.816346] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/point2_d.hpp\n'}
+[6.816421] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detection_array.hpp\n'}
+[6.816518] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail\n'}
+[6.816612] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__struct.hpp\n'}
+[6.816685] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__struct.hpp\n'}
+[6.816755] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__builder.hpp\n'}
+[6.816853] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__struct.hpp\n'}
+[6.816955] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__traits.hpp\n'}
+[6.817067] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__traits.hpp\n'}
+[6.817149] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__struct.hpp\n'}
+[6.817254] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__traits.hpp\n'}
+[6.817341] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__traits.hpp\n'}
+[6.817429] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__struct.hpp\n'}
+[6.817538] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__builder.hpp\n'}
+[6.817641] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__builder.hpp\n'}
+[6.817730] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__struct.hpp\n'}
+[6.817817] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__struct.hpp\n'}
+[6.817904] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__builder.hpp\n'}
+[6.817985] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__builder.hpp\n'}
+[6.818065] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__builder.hpp\n'}
+[6.818146] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__traits.hpp\n'}
+[6.818218] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__traits.hpp\n'}
+[6.818298] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__traits.hpp\n'}
+[6.818377] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__builder.hpp\n'}
+[6.818456] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/mask.hpp\n'}
+[6.818542] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detection.hpp\n'}
+[6.818622] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/lane_info.hpp\n'}
+[6.818700] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/motor.hpp\n'}
+[6.818776] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg\n'}
+[6.818854] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg\n'}
+[6.818933] (interfaces_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail\n'}
+[6.819012] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.819091] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.819170] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.819249] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.819329] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection__type_support.cpp\n'}
+[6.819408] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/bounding_box2_d__type_support.cpp\n'}
+[6.819488] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__type_support.cpp\n'}
+[6.819574] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.819653] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/mask__type_support.cpp\n'}
+[6.819733] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/lane_info__type_support.cpp\n'}
+[6.819812] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__type_support.cpp\n'}
+[6.819890] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.819975] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/point2_d__type_support.cpp\n'}
+[6.820053] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/include/interfaces_pkg/msg/detail/motor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.820130] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_introspection_cpp.so\n'}
+[6.820210] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.820289] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_cpp.so\n'}
+[6.820367] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__rosidl_typesupport_cpp.so" to ""\n'}
+[6.820445] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/pythonpath.sh\n'}
+[6.820528] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/pythonpath.dsv\n'}
+[6.820609] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/__init__.py\n'}
+[6.822188] (-) TimerEvent: {}
+[6.844291] (interfaces_pkg) StdoutLine: {'line': b"Compiling '/home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/__init__.py'...\n"}
+[6.847618] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg\n'}
+[6.847802] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_bounding_box2_d.py\n'}
+[6.847866] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_point2_d_s.c\n'}
+[6.847920] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_detection_array.py\n'}
+[6.847971] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_detection_array_s.c\n'}
+[6.848059] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_mask.py\n'}
+[6.848156] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_lane_info.py\n'}
+[6.848210] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_bounding_box2_d_s.c\n'}
+[6.848277] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_mask_s.c\n'}
+[6.848330] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/__init__.py\n'}
+[6.848389] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_point2_d.py\n'}
+[6.848451] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_detection.py\n'}
+[6.848512] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_motor_s.c\n'}
+[6.848604] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_lane_info_s.c\n'}
+[6.848678] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_motor.py\n'}
+[6.848727] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/msg/_detection_s.c\n'}
+[6.848809] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[6.849172] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[6.849391] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[6.849897] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[6.850073] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[6.850547] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages/interfaces_pkg/interfaces_pkg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[6.850688] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__python.so\n'}
+[6.850868] (interfaces_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/eunseop/ros2_ws/install/interfaces_pkg/lib/libinterfaces_pkg__python.so" to ""\n'}
+[6.850987] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/BoundingBox2D.idl\n'}
+[6.851104] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Detection.idl\n'}
+[6.851210] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/DetectionArray.idl\n'}
+[6.851304] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Mask.idl\n'}
+[6.851386] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Motor.idl\n'}
+[6.851438] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Point2D.idl\n'}
+[6.851504] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/LaneInfo.idl\n'}
+[6.851577] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/BoundingBox2D.msg\n'}
+[6.851650] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Detection.msg\n'}
+[6.851723] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/DetectionArray.msg\n'}
+[6.851793] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Mask.msg\n'}
+[6.851876] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Motor.msg\n'}
+[6.851951] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/Point2D.msg\n'}
+[6.852045] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/msg/LaneInfo.msg\n'}
+[6.852187] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/ament_index/resource_index/package_run_dependencies/interfaces_pkg\n'}
+[6.852311] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/ament_index/resource_index/parent_prefix_path/interfaces_pkg\n'}
+[6.852451] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/ament_prefix_path.sh\n'}
+[6.852563] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/ament_prefix_path.dsv\n'}
+[6.852652] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/path.sh\n'}
+[6.852736] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/environment/path.dsv\n'}
+[6.852818] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/local_setup.bash\n'}
+[6.852897] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/local_setup.sh\n'}
+[6.852982] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/local_setup.zsh\n'}
+[6.853061] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/local_setup.dsv\n'}
+[6.853142] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/package.dsv\n'}
+[6.853258] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/ament_index/resource_index/packages/interfaces_pkg\n'}
+[6.853409] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_generator_cExport.cmake\n'}
+[6.853525] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.853666] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.853825] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.853946] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_cExport.cmake\n'}
+[6.854037] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.854149] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_generator_cppExport.cmake\n'}
+[6.854235] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.854321] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.854441] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_cppExport.cmake\n'}
+[6.854531] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.854619] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/rosidl_cmake-extras.cmake\n'}
+[6.854702] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.854786] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.854870] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.854951] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.855036] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.855121] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.855205] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkgConfig.cmake\n'}
+[6.855272] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/cmake/interfaces_pkgConfig-version.cmake\n'}
+[6.855345] (interfaces_pkg) StdoutLine: {'line': b'-- Installing: /home/eunseop/ros2_ws/install/interfaces_pkg/share/interfaces_pkg/package.xml\n'}
+[6.857232] (interfaces_pkg) CommandEnded: {'returncode': 0}
+[6.922362] (-) TimerEvent: {}
+[6.982564] (interfaces_pkg) JobEnded: {'identifier': 'interfaces_pkg', 'rc': 0}
+[6.983695] (img_process) JobStarted: {'identifier': 'img_process'}
+[6.989639] (yolov8_ros) JobStarted: {'identifier': 'yolov8_ros'}
+[7.022522] (-) TimerEvent: {}
+[7.122954] (-) TimerEvent: {}
+[7.223295] (-) TimerEvent: {}
+[7.323711] (-) TimerEvent: {}
+[7.424286] (-) TimerEvent: {}
+[7.524643] (-) TimerEvent: {}
+[7.625038] (-) TimerEvent: {}
+[7.725302] (-) TimerEvent: {}
+[7.825620] (-) TimerEvent: {}
+[7.925943] (-) TimerEvent: {}
+[7.963963] (img_process) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/img_process', 'build', '--build-base', '/home/eunseop/ros2_ws/build/img_process/build', 'install', '--record', '/home/eunseop/ros2_ws/build/img_process/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/eunseop/ros2_ws/src/img_process', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'eunseop', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1705', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/eunseop/ros2_ws/install/interfaces_pkg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/eunseop', 'OLDPWD': '/home/eunseop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1597', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6192', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'eunseop', 'JOURNAL_STREAM': '8:47904', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'eunseop', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/eunseop/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/UbuntuEunseop:@/tmp/.ICE-unix/1743,unix/UbuntuEunseop:/tmp/.ICE-unix/1743', 'INVOCATION_ID': 'b3183d5477984bd79c31bfdac5a24828', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/eunseop/ros2_ws/install/interfaces_pkg:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:51d1acd5-54a4-46c4-a566-c1844e428721', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eunseop/ros2_ws/build/img_process', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': ':/home/eunseop/dev_ws/build/aidin_m1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/eunseop/ros2_ws/build/img_process/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages:/home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/eunseop/ros2_ws/install/interfaces_pkg'}, 'shell': False}
+[7.987116] (yolov8_ros) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/yolov8_ros', 'build', '--build-base', '/home/eunseop/ros2_ws/build/yolov8_ros/build', 'install', '--record', '/home/eunseop/ros2_ws/build/yolov8_ros/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/eunseop/ros2_ws/src/yolov8_ros', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'eunseop', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1705', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/eunseop/ros2_ws/install/interfaces_pkg/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib', 'HOME': '/home/eunseop', 'OLDPWD': '/home/eunseop', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1597', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6192', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'eunseop', 'JOURNAL_STREAM': '8:47904', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'eunseop', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/galactic/bin:/home/eunseop/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/UbuntuEunseop:@/tmp/.ICE-unix/1743,unix/UbuntuEunseop:/tmp/.ICE-unix/1743', 'INVOCATION_ID': 'b3183d5477984bd79c31bfdac5a24828', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/eunseop/ros2_ws/install/load_img:/home/eunseop/ros2_ws/install/interfaces_pkg:/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:51d1acd5-54a4-46c4-a566-c1844e428721', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/eunseop/ros2_ws/build/yolov8_ros', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': ':/home/eunseop/dev_ws/build/aidin_m1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/eunseop/ros2_ws/build/yolov8_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/eunseop/ros2_ws/install/load_img/lib/python3.8/site-packages:/home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/eunseop/ros2_ws/install/interfaces_pkg'}, 'shell': False}
+[8.026070] (-) TimerEvent: {}
+[8.126407] (-) TimerEvent: {}
+[8.178316] (img_process) StdoutLine: {'line': b'running egg_info\n'}
+[8.178872] (img_process) StdoutLine: {'line': b'creating ../../build/img_process/img_process.egg-info\n'}
+[8.180408] (img_process) StdoutLine: {'line': b'writing ../../build/img_process/img_process.egg-info/PKG-INFO\n'}
+[8.180576] (img_process) StdoutLine: {'line': b'writing dependency_links to ../../build/img_process/img_process.egg-info/dependency_links.txt\n'}
+[8.180676] (img_process) StdoutLine: {'line': b'writing entry points to ../../build/img_process/img_process.egg-info/entry_points.txt\n'}
+[8.180767] (img_process) StdoutLine: {'line': b'writing requirements to ../../build/img_process/img_process.egg-info/requires.txt\n'}
+[8.180851] (img_process) StdoutLine: {'line': b'writing top-level names to ../../build/img_process/img_process.egg-info/top_level.txt\n'}
+[8.181128] (img_process) StdoutLine: {'line': b"writing manifest file '../../build/img_process/img_process.egg-info/SOURCES.txt'\n"}
+[8.214730] (yolov8_ros) StdoutLine: {'line': b'running egg_info\n'}
+[8.214962] (img_process) StdoutLine: {'line': b"reading manifest file '../../build/img_process/img_process.egg-info/SOURCES.txt'\n"}
+[8.215149] (yolov8_ros) StdoutLine: {'line': b'creating ../../build/yolov8_ros/yolov8_ros.egg-info\n'}
+[8.215375] (yolov8_ros) StdoutLine: {'line': b'writing ../../build/yolov8_ros/yolov8_ros.egg-info/PKG-INFO\n'}
+[8.215585] (img_process) StdoutLine: {'line': b"writing manifest file '../../build/img_process/img_process.egg-info/SOURCES.txt'\n"}
+[8.215727] (yolov8_ros) StdoutLine: {'line': b'writing dependency_links to ../../build/yolov8_ros/yolov8_ros.egg-info/dependency_links.txt\n'}
+[8.215849] (img_process) StdoutLine: {'line': b'running build\n'}
+[8.216022] (img_process) StdoutLine: {'line': b'running build_py\n'}
+[8.216093] (yolov8_ros) StdoutLine: {'line': b'writing entry points to ../../build/yolov8_ros/yolov8_ros.egg-info/entry_points.txt\n'}
+[8.216148] (yolov8_ros) StdoutLine: {'line': b'writing requirements to ../../build/yolov8_ros/yolov8_ros.egg-info/requires.txt\n'}
+[8.216198] (yolov8_ros) StdoutLine: {'line': b'writing top-level names to ../../build/yolov8_ros/yolov8_ros.egg-info/top_level.txt\n'}
+[8.216276] (img_process) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/img_process/build\n'}
+[8.216327] (img_process) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/img_process/build/lib\n'}
+[8.216377] (img_process) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/img_process/build/lib/img_process\n'}
+[8.216503] (img_process) StdoutLine: {'line': b'copying img_process/image_extract_info_node.py -> /home/eunseop/ros2_ws/build/img_process/build/lib/img_process\n'}
+[8.216580] (img_process) StdoutLine: {'line': b'copying img_process/__init__.py -> /home/eunseop/ros2_ws/build/img_process/build/lib/img_process\n'}
+[8.216655] (img_process) StdoutLine: {'line': b'copying img_process/image_postprocess_node.py -> /home/eunseop/ros2_ws/build/img_process/build/lib/img_process\n'}
+[8.216738] (img_process) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/lib\n'}
+[8.216804] (img_process) StdoutLine: {'line': b'copying img_process/lib/__init__.py -> /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/lib\n'}
+[8.216914] (img_process) StdoutLine: {'line': b'running install\n'}
+[8.217424] (yolov8_ros) StdoutLine: {'line': b"writing manifest file '../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'\n"}
+[8.217757] (img_process) StdoutLine: {'line': b'running install_lib\n'}
+[8.218873] (img_process) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process\n'}
+[8.219007] (img_process) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/image_extract_info_node.py -> /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process\n'}
+[8.219096] (img_process) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/lib\n'}
+[8.219197] (img_process) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/lib/__init__.py -> /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/lib\n'}
+[8.219250] (img_process) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/__init__.py -> /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process\n'}
+[8.219299] (img_process) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/image_postprocess_node.py -> /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process\n'}
+[8.219580] (img_process) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/image_extract_info_node.py to image_extract_info_node.cpython-38.pyc\n'}
+[8.221747] (img_process) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/lib/__init__.py to __init__.cpython-38.pyc\n'}
+[8.222055] (img_process) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/__init__.py to __init__.cpython-38.pyc\n'}
+[8.222188] (img_process) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/image_postprocess_node.py to image_postprocess_node.cpython-38.pyc\n'}
+[8.223027] (img_process) StdoutLine: {'line': b'running install_data\n'}
+[8.223133] (img_process) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/img_process/share/ament_index\n'}
+[8.223192] (img_process) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/img_process/share/ament_index/resource_index\n'}
+[8.223282] (img_process) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/img_process/share/ament_index/resource_index/packages\n'}
+[8.223337] (img_process) StdoutLine: {'line': b'copying resource/img_process -> /home/eunseop/ros2_ws/install/img_process/share/ament_index/resource_index/packages\n'}
+[8.223424] (img_process) StdoutLine: {'line': b'copying package.xml -> /home/eunseop/ros2_ws/install/img_process/share/img_process\n'}
+[8.223485] (img_process) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.224840] (img_process) StdoutLine: {'line': b'Copying ../../build/img_process/img_process.egg-info to /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process-0.0.0-py3.8.egg-info\n'}
+[8.225382] (img_process) StdoutLine: {'line': b'running install_scripts\n'}
+[8.226485] (-) TimerEvent: {}
+[8.241660] (img_process) StdoutLine: {'line': b'Installing img_grad script to /home/eunseop/ros2_ws/install/img_process/lib/img_process\n'}
+[8.241881] (img_process) StdoutLine: {'line': b'Installing img_post script to /home/eunseop/ros2_ws/install/img_process/lib/img_process\n'}
+[8.242098] (img_process) StdoutLine: {'line': b"writing list of installed files to '/home/eunseop/ros2_ws/build/img_process/install.log'\n"}
+[8.251226] (yolov8_ros) StdoutLine: {'line': b"reading manifest file '../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'\n"}
+[8.252322] (yolov8_ros) StdoutLine: {'line': b"writing manifest file '../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'\n"}
+[8.253526] (yolov8_ros) StdoutLine: {'line': b'running build\n'}
+[8.253712] (yolov8_ros) StdoutLine: {'line': b'running build_py\n'}
+[8.253774] (yolov8_ros) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/yolov8_ros/build\n'}
+[8.253839] (yolov8_ros) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/yolov8_ros/build/lib\n'}
+[8.253910] (yolov8_ros) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros\n'}
+[8.253965] (yolov8_ros) StdoutLine: {'line': b'copying yolov8_ros/__init__.py -> /home/eunseop/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros\n'}
+[8.254018] (yolov8_ros) StdoutLine: {'line': b'copying yolov8_ros/instance_segmentation_node.py -> /home/eunseop/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros\n'}
+[8.254068] (yolov8_ros) StdoutLine: {'line': b'running install\n'}
+[8.254453] (yolov8_ros) StdoutLine: {'line': b'running install_lib\n'}
+[8.255537] (yolov8_ros) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros\n'}
+[8.255696] (yolov8_ros) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros/__init__.py -> /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros\n'}
+[8.255798] (yolov8_ros) StdoutLine: {'line': b'copying /home/eunseop/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros/instance_segmentation_node.py -> /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros\n'}
+[8.256335] (yolov8_ros) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/__init__.py to __init__.cpython-38.pyc\n'}
+[8.257703] (yolov8_ros) StdoutLine: {'line': b'byte-compiling /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/instance_segmentation_node.py to instance_segmentation_node.cpython-38.pyc\n'}
+[8.259771] (yolov8_ros) StdoutLine: {'line': b'running install_data\n'}
+[8.259973] (yolov8_ros) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/yolov8_ros/share/ament_index\n'}
+[8.260047] (yolov8_ros) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/yolov8_ros/share/ament_index/resource_index\n'}
+[8.260122] (yolov8_ros) StdoutLine: {'line': b'creating /home/eunseop/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages\n'}
+[8.260186] (yolov8_ros) StdoutLine: {'line': b'copying resource/yolov8_ros -> /home/eunseop/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages\n'}
+[8.260290] (yolov8_ros) StdoutLine: {'line': b'copying package.xml -> /home/eunseop/ros2_ws/install/yolov8_ros/share/yolov8_ros\n'}
+[8.260375] (yolov8_ros) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.261603] (yolov8_ros) StdoutLine: {'line': b'Copying ../../build/yolov8_ros/yolov8_ros.egg-info to /home/eunseop/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros-0.0.0-py3.8.egg-info\n'}
+[8.262224] (yolov8_ros) StdoutLine: {'line': b'running install_scripts\n'}
+[8.265274] (img_process) CommandEnded: {'returncode': 0}
+[8.270397] (img_process) JobEnded: {'identifier': 'img_process', 'rc': 0}
+[8.280427] (yolov8_ros) StdoutLine: {'line': b'Installing predict script to /home/eunseop/ros2_ws/install/yolov8_ros/lib/yolov8_ros\n'}
+[8.280617] (yolov8_ros) StdoutLine: {'line': b"writing list of installed files to '/home/eunseop/ros2_ws/build/yolov8_ros/install.log'\n"}
+[8.301954] (yolov8_ros) CommandEnded: {'returncode': 0}
+[8.307151] (yolov8_ros) JobEnded: {'identifier': 'yolov8_ros', 'rc': 0}
+[8.307844] (-) EventReactorShutdown: {}

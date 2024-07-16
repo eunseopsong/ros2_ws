@@ -1,0 +1,30 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/bounding_box2_d__type_support.cpp.o"
+  "CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/detection__type_support.cpp.o"
+  "CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/detection_array__type_support.cpp.o"
+  "CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/lane_info__type_support.cpp.o"
+  "CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/mask__type_support.cpp.o"
+  "CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/motor__type_support.cpp.o"
+  "CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/point2_d__type_support.cpp.o"
+  "libinterfaces_pkg__rosidl_typesupport_introspection_cpp.pdb"
+  "libinterfaces_pkg__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/bounding_box2_d__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/detection__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/detection_array__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/lane_info__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/lane_info__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/mask__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/mask__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/motor__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/motor__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/interfaces_pkg/msg/detail/point2_d__type_support.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/interfaces_pkg__rosidl_typesupport_introspection_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

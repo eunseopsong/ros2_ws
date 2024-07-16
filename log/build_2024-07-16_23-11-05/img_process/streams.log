@@ -1,0 +1,46 @@
+[0.983s] Invoking command in '/home/eunseop/ros2_ws/src/img_process': AMENT_PREFIX_PATH=/home/eunseop/ros2_ws/install/interfaces_pkg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eunseop/ros2_ws/install/interfaces_pkg LD_LIBRARY_PATH=/home/eunseop/ros2_ws/install/interfaces_pkg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eunseop/ros2_ws/build/img_process/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages:/home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/img_process build --build-base /home/eunseop/ros2_ws/build/img_process/build install --record /home/eunseop/ros2_ws/build/img_process/install.log --single-version-externally-managed install_data
+[1.195s] running egg_info
+[1.195s] creating ../../build/img_process/img_process.egg-info
+[1.197s] writing ../../build/img_process/img_process.egg-info/PKG-INFO
+[1.197s] writing dependency_links to ../../build/img_process/img_process.egg-info/dependency_links.txt
+[1.197s] writing entry points to ../../build/img_process/img_process.egg-info/entry_points.txt
+[1.197s] writing requirements to ../../build/img_process/img_process.egg-info/requires.txt
+[1.197s] writing top-level names to ../../build/img_process/img_process.egg-info/top_level.txt
+[1.198s] writing manifest file '../../build/img_process/img_process.egg-info/SOURCES.txt'
+[1.231s] reading manifest file '../../build/img_process/img_process.egg-info/SOURCES.txt'
+[1.232s] writing manifest file '../../build/img_process/img_process.egg-info/SOURCES.txt'
+[1.232s] running build
+[1.232s] running build_py
+[1.233s] creating /home/eunseop/ros2_ws/build/img_process/build
+[1.233s] creating /home/eunseop/ros2_ws/build/img_process/build/lib
+[1.233s] creating /home/eunseop/ros2_ws/build/img_process/build/lib/img_process
+[1.233s] copying img_process/image_extract_info_node.py -> /home/eunseop/ros2_ws/build/img_process/build/lib/img_process
+[1.233s] copying img_process/__init__.py -> /home/eunseop/ros2_ws/build/img_process/build/lib/img_process
+[1.233s] copying img_process/image_postprocess_node.py -> /home/eunseop/ros2_ws/build/img_process/build/lib/img_process
+[1.233s] creating /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/lib
+[1.233s] copying img_process/lib/__init__.py -> /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/lib
+[1.233s] running install
+[1.234s] running install_lib
+[1.235s] creating /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process
+[1.235s] copying /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/image_extract_info_node.py -> /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process
+[1.235s] creating /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/lib
+[1.236s] copying /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/lib/__init__.py -> /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/lib
+[1.236s] copying /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/__init__.py -> /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process
+[1.236s] copying /home/eunseop/ros2_ws/build/img_process/build/lib/img_process/image_postprocess_node.py -> /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process
+[1.236s] byte-compiling /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/image_extract_info_node.py to image_extract_info_node.cpython-38.pyc
+[1.238s] byte-compiling /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/lib/__init__.py to __init__.cpython-38.pyc
+[1.238s] byte-compiling /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/__init__.py to __init__.cpython-38.pyc
+[1.239s] byte-compiling /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process/image_postprocess_node.py to image_postprocess_node.cpython-38.pyc
+[1.239s] running install_data
+[1.239s] creating /home/eunseop/ros2_ws/install/img_process/share/ament_index
+[1.240s] creating /home/eunseop/ros2_ws/install/img_process/share/ament_index/resource_index
+[1.240s] creating /home/eunseop/ros2_ws/install/img_process/share/ament_index/resource_index/packages
+[1.240s] copying resource/img_process -> /home/eunseop/ros2_ws/install/img_process/share/ament_index/resource_index/packages
+[1.240s] copying package.xml -> /home/eunseop/ros2_ws/install/img_process/share/img_process
+[1.240s] running install_egg_info
+[1.241s] Copying ../../build/img_process/img_process.egg-info to /home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages/img_process-0.0.0-py3.8.egg-info
+[1.242s] running install_scripts
+[1.258s] Installing img_grad script to /home/eunseop/ros2_ws/install/img_process/lib/img_process
+[1.258s] Installing img_post script to /home/eunseop/ros2_ws/install/img_process/lib/img_process
+[1.258s] writing list of installed files to '/home/eunseop/ros2_ws/build/img_process/install.log'
+[1.282s] Invoked command in '/home/eunseop/ros2_ws/src/img_process' returned '0': AMENT_PREFIX_PATH=/home/eunseop/ros2_ws/install/interfaces_pkg:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/eunseop/ros2_ws/install/interfaces_pkg LD_LIBRARY_PATH=/home/eunseop/ros2_ws/install/interfaces_pkg/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/eunseop/ros2_ws/build/img_process/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/eunseop/ros2_ws/install/img_process/lib/python3.8/site-packages:/home/eunseop/ros2_ws/install/interfaces_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/img_process build --build-base /home/eunseop/ros2_ws/build/img_process/build install --record /home/eunseop/ros2_ws/build/img_process/install.log --single-version-externally-managed install_data

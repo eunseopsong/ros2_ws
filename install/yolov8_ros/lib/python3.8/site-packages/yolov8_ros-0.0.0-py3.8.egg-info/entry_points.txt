@@ -1,0 +1,3 @@
+[console_scripts]
+predict = yolov8_ros.instance_segmentation_node:main
+

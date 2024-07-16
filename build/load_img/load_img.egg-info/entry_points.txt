@@ -1,0 +1,6 @@
+[console_scripts]
+cam_pub = load_img.camera_publisher_node:main
+img_pub = load_img.image_publisher_node:main
+img_sub = load_img.image_subscriber_node:main
+video_pub = load_img.video_publisher_node:main
+

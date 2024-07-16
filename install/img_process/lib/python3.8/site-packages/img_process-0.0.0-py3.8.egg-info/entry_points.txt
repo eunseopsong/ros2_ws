@@ -1,0 +1,4 @@
+[console_scripts]
+img_grad = img_process.image_extract_info_node:main
+img_post = img_process.image_postprocess_node:main
+

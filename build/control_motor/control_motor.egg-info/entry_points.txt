@@ -1,0 +1,5 @@
+[console_scripts]
+convert_protocol = control_motor.convert_protocol_node:main
+gen_control_data = control_motor.generate_control_signal_node:main
+send_serial = control_motor.control_motor_node:main
+
